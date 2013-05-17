@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <h1>Example of contentEditable in an iframe</h1>
+
+
+    <iframe id="editor" src="./iframe.html"></iframe>
+    <div>
+      <button onclick="document.getElementById('editor').contentDocument.getElementsByTagName('body')[0].focus()">Click to focus on iframe contentEditable</button>
+    </div>
+
+    <hr />
+
+    <div id='contentEditableDiv' contentEditable>A simple contentEditable div</div>
+    <div>
+      <button onclick="document.getElementById('contentEditableDiv').focus()">Click to focus on contentEditableDiv (no iframe)</button>
+    </div>
+
+  </body>
+</html>
